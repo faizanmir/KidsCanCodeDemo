@@ -1,0 +1,224 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Scene/BlockList.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scene/destination.gd" type="Script" id=3]
+[ext_resource path="res://Scene/PanelScript.gd" type="Script" id=4]
+
+[node name="ListAndDragPanels" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="BlocksContainer" parent="." instance=ExtResource( 2 )]
+anchor_left = 0.0
+anchor_right = 0.0
+margin_left = 17.0197
+margin_top = -3.40393
+margin_right = 217.02
+margin_bottom = 584.596
+follow_focus = true
+
+[node name="DragPanel" type="Panel" parent="."]
+margin_left = 220.311
+margin_top = 488.516
+margin_right = 920.311
+margin_bottom = 588.516
+rect_min_size = Vector2( 700, 100 )
+mouse_filter = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DragPanel"]
+margin_right = 700.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 700, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DragPanel/ScrollContainer"]
+margin_right = 828.0
+margin_bottom = 100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination4" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination5" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination6" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_left = 208.0
+margin_right = 308.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination7" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_left = 312.0
+margin_right = 412.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination8" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_left = 416.0
+margin_right = 516.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination9" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_left = 520.0
+margin_right = 620.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination9"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination10" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_left = 624.0
+margin_right = 724.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination10"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="destination11" type="Control" parent="DragPanel/ScrollContainer/HBoxContainer"]
+margin_left = 728.0
+margin_right = 828.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="img" type="TextureRect" parent="DragPanel/ScrollContainer/HBoxContainer/destination11"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 200, 200 )
+rect_scale = Vector2( 0.5, 0.5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 935.35
+margin_top = 507.79
+margin_right = 999.35
+margin_bottom = 571.79
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="move_player_according_block" from="DragPanel/ScrollContainer/HBoxContainer/destination4" to="." method="_on_destination4_move_player_according_block"]
+[connection signal="pressed" from="TextureButton" to="DragPanel/ScrollContainer/HBoxContainer/destination4" method="_on_TextureButton_pressed"]

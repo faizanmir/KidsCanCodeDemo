@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://platform_objects/blockLarge.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scene/Level.tscn" type="PackedScene" id=3]
+[ext_resource path="res://platform_objects/blockSlope.tscn" type="PackedScene" id=4]
+[ext_resource path="res://platform_objects/blockCliffCorner.tscn" type="PackedScene" id=5]
+[ext_resource path="res://platform_objects/blockHexagon.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/coinGold.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Tweak/TweakPlayer.scn" type="PackedScene" id=9]
+
+[node name="Level" type="Spatial"]
+
+[node name="Ground" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.528987, 0 )
+
+[node name="blockLarge" parent="Ground" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02055, 0.00513475, 0.0352198 )
+
+[node name="blockLarge4" parent="Ground" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.49716, 1.16719, -3.02338 )
+
+[node name="blockLarge5" parent="Ground" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.83958, 1.16719, -3.02338 )
+
+[node name="blockLarge3" parent="Ground" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02055, 0.00513475, -1.93015 )
+
+[node name="blockLarge2" parent="Ground" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.067, 0, 0.048 )
+
+[node name="blockHexagon" parent="Ground" instance=ExtResource( 6 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 5, 0.508361, 1.75527 )
+
+[node name="blockHexagon2" parent="Ground" instance=ExtResource( 6 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 6.81281, 0.801812, 0.509181 )
+
+[node name="blockHexagon3" parent="Ground" instance=ExtResource( 6 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 8.17518, 1.04522, -1.01828 )
+
+[node name="blockHexagon4" parent="Ground" instance=ExtResource( 6 )]
+transform = Transform( -3.25841e-07, 0, 1.5, 0, 1, 0, -2, 0, -2.44381e-07, 9.39335, 1.16779, -3.01426 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Ground"]
+transform = Transform( 1, 0, 0, 0, 0.71243, 0.701743, 0, -0.701743, 0.71243, 0, 2.80976, 3.09103 )
+shadow_enabled = true
+
+[node name="blockSlope" parent="Ground" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.059, 0, 0.047 )
+
+[node name="blockSlope3" parent="Ground" instance=ExtResource( 4 )]
+transform = Transform( -1.62921e-07, -3, 8.74228e-08, 0, -1.31134e-07, -2, 1, -4.88762e-07, 1.4243e-14, 5, 0, -3.924 )
+
+[node name="blockCliffCorner" parent="Ground" instance=ExtResource( 5 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 2.1, 0, -1.9 )
+
+[node name="DragAndDropInterface" parent="Ground" instance=ExtResource( 3 )]
+
+[node name="coinGold" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, 0 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.706292, 0.35396, -0.613077, 0, 0.866025, 0.5, 0.707921, -0.353146, 0.611667, -9.03448, 7.07429, 9.27908 )
+fov = 77.9594
+
+[node name="KinematicBody" parent="." instance=ExtResource( 9 )]
+transform = Transform( -2.18557e-10, 0, -0.005, 0, 0.005, 0, 0.005, 0, -2.18557e-10, 1.15826, 0.848817, 7.43599 )

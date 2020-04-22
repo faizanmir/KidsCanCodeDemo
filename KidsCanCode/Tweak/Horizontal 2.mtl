@@ -1,0 +1,46 @@
+# OBJ Material Export by Luxion KeyShot
+
+newmtl Tire
+Kd 0.0025 0.0025 0.0025
+
+newmtl Hard Shiny Plastic Red #1
+Kd 0.863813 0.00813307 0.0271325
+
+newmtl Hard Shiny Plastic Green
+Kd 1 0.516671 5.77569e-07
+
+newmtl Hard Shiny Plastic Blue
+Kd 0.00813949 0.454963 0.691173
+
+newmtl Tire
+Kd 0.0025 0.0025 0.0025
+
+newmtl Hard Shiny Plastic Red #1
+Kd 0.863813 0.00813307 0.0271325
+
+newmtl Clear Rough Plastic Black
+Kd 0 0 0
+
+newmtl Hard Shiny Plastic White
+Kd 1 0.28864 0.0147881
+
+newmtl Hard Shiny Plastic Green
+Kd 1 0.516671 5.77569e-07
+
+newmtl Hard Shiny Plastic Blue
+Kd 0.00813949 0.454963 0.691173
+
+newmtl Chrome Polished
+Kd 0.792157 0.819608 0.933333
+
+newmtl Hard Shiny Plastic Red #1
+Kd 0.863813 0.00813307 0.0271325
+
+newmtl Hard Shiny Plastic Black
+Kd 0.778546 0.100893 0.100893
+
+newmtl Hard Shiny Plastic Green
+Kd 1 0.516671 5.77569e-07
+
+newmtl Hard Shiny Plastic Green #1
+Kd 2.40654e-06 0.418693 0.4289
